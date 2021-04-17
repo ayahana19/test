@@ -1,0 +1,60 @@
+<!-- 開発バージョン、便利なコンソールの警告が含まれています 
+このファイルにかませるapp.jsファイルを作った
+
+電子書籍 『基礎から学ぶVUE.JS』
+『Vue.js入門』https://flxy.jp/article/8761
+
+-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Vue Routerサンプル</title>
+   <link rel="stylesheet" href="./main.css">
+</head>
+<body style="background-color:lightgreen;">
+  <div id="app_1"> <font color="purple" size="1">
+    <!-- この部分に必要なHTML要素を記述していく -->
+     <h1>{{ message }}</h1>
+</font>
+  </div>
+
+<div id="app_2">
+
+    <!-- この部分に必要なHTML要素を記述していく -->
+    <font color="purple" size="3">
+    <router-link to="/">トップページ</router-link>
+
+    <router-link to="/fruits">フルーツ一覧ページ</router-link>
+    <router-view></router-view>
+</font>
+  </div>
+
+
+  <p>ここにHTMLの文章などが入ります</p>
+
+  <!-- Vue.jsとVue Routerを読み込む -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/2.8.1/vue-router.js"></script>
+
+  
+  
+
+
+  <script type="text/javascript" src="test_aya.js"></script>
+
+   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+   <a href="https://flxy.jp/article/8761"> 青木彩花💞 『Vue.js入門』</a>
+
+
+ 
+
+
+
+</body>
+</html>
+
